@@ -27,7 +27,7 @@
 # • Buat juga code java dari diagram class tersebut
 
 ## • Kelas Mahasiswa
-java
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,7 +54,7 @@ class Mahasiswa {
         }
     }
 }
-
+```
 ### • Penjelasan
 
 Atribut:
