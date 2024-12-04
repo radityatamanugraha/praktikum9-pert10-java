@@ -10,19 +10,19 @@
 
 ![gambar](Tugas-Pemrograman-Orientasi-Objek-Pert-10/ss2.png)
 
-### • Relasinya
-
+### Relasinya
+```
 - Mahasiswa dapat mengambil banyak mata kuliah (1 ke *).
 - Mata kuliah dapat memiliki banyak mahasiswa terdaftar (* ke *).
 - Mata kuliah memiliki satu pengajar (* ke 1).
+```
 
-
-### • Penjelasanya
-
+### Penjelasanya
+```
 - Mahasiswa memiliki atribut nama, nim, dan daftar mata kuliah yang diambil (daftarMatkul). Mahasiswa dapat mendaftar mata kuliah dan menampilkan mata kuliah yang diambil.
 - Matkul memiliki atribut nama, pengajar, dan daftar mahasiswa yang terdaftar (mahasiswa). Mata kuliah memiliki metode untuk menambah mahasiswa, menampilkan nama mata kuliah, dan menampilkan daftar mahasiswa yang terdaftar.
 - Pengajar memiliki atribut nama dan metode untuk mengajar serta mendapatkan nama pengajar.
-
+```
 
 # • Buat juga code java dari diagram class tersebut
 
@@ -55,8 +55,8 @@ class Mahasiswa {
     }
 }
 ```
-### • Penjelasan
-
+### Penjelasan
+```
 Atribut:
   - nama: Menyimpan nama mahasiswa.
   - nim: Menyimpan Nomor Induk Mahasiswa (NIM).
@@ -66,7 +66,7 @@ Konstruktor:
 Metode:
   - daftarMatkul(Matkul matkul): Menambahkan mata kuliah ke dalam daftar mata kuliah yang diambil oleh mahasiswa dan juga menambahkan mahasiswa ke dalam daftar mahasiswa yang terdaftar pada mata kuliah tersebut.
   - tampilkanMatkul(): Menampilkan daftar mata kuliah yang diambil oleh mahasiswa, mencetak nama mata kuliah beserta NIM mahasiswa.
-
+```
 
 ## • Kelas Matkul (Mata Kuliah)
 ```java
@@ -101,8 +101,8 @@ class Matkul {
     }
 }
 ```
-### • Penjelasan
-
+### Penjelasan
+```
 Atribut:
   - nama: Menyimpan nama mata kuliah.
   - pengajar: Menyimpan objek pengajar yang mengajar mata kuliah tersebut.
@@ -114,7 +114,7 @@ Metode:
   - getNama(): Mengembalikan nama mata kuliah.
   - getPengajar(): Mengembalikan objek pengajar yang mengajar mata kuliah ini.
   - tampilkanMahasiswa(): Menampilkan daftar mahasiswa yang terdaftar dalam mata kuliah tersebut.
-
+```
 
 ## • Kelas Pengajar
 ```java
@@ -134,8 +134,8 @@ class Pengajar {
     }
 }
 ```
-### • Penjelasan
-
+### Penjelasan
+```
 Atribut:
   - nama: Menyimpan nama pengajar.
 Konstruktor:
@@ -143,7 +143,7 @@ Konstruktor:
 Metode:
   - ajar(): Menampilkan pesan bahwa pengajar sedang mengajar.
   - getNama(): Mengembalikan nama pengajar.
-
+```
 
 ## • Kelas Main
 ```java
@@ -175,8 +175,8 @@ public class main {
     }
 }
 ```
-### • Penjelasan
-
+### Penjelasan
+```
 - Metode main: Merupakan titik masuk program yang membuat objek-objek dari kelas Pengajar, Matkul, dan Mahasiswa serta mengatur interaksi antar objek:
   - Membuat Pengajar:
     - pengajar1 dan pengajar2 adalah objek pengajar yang bernama "Yoga" dan "Agus".
